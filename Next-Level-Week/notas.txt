@@ -1,0 +1,50 @@
+// -------- Run Database ----------- //
+
+ npm rum knex:migrate
+
+
+
+// ---------- server.ts anotações -------------//
+
+// const users = [
+//     'Diego',
+//     'Guilherme',
+//     'Paula',
+//     'Gilberto',
+//     'Giovana'
+// ];
+
+// // Listar Usuários
+// app.get('/users', (request, response) => {
+//     const search = String(request.query.search);
+
+//     const filteredUsers = search ? users.filter(user => user.includes(search)) : users;
+
+//     response.json( filteredUsers );
+// });
+
+
+// // Listar Usuários por ID
+// app.get('/users/:id', (request, response) => {
+//     const id = Number(request.params.id);
+
+//     const user = users[id];
+
+//     return response.json(user);
+// });
+
+
+// // Criar Usuário
+// app.post('/users', (resquest,response) =>{
+
+//     const data = resquest.body;
+
+//     console.log(data)
+
+//     const user ={
+//         name: data.name,
+//         email: data.email
+//     };
+    
+//     return response.json(user);
+// });
