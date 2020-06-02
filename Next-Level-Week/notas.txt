@@ -2,6 +2,14 @@
 
  npm rum knex:migrate
 
+// -------- Run Seeds ----------- //
+
+npm rum knex:seed
+
+// -------- Run Aplication ----------- //
+
+npm rum dev
+
 
 
 // ---------- server.ts anotações -------------//
