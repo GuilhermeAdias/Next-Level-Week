@@ -26,14 +26,15 @@ interface IbgeUfResponse {
 }
 
 const CreatePoint = () => {
-    const [selectedFile, setSelectedFile] = useState<File>();
-    const [items, setItems] = useState<Item[]>([]);
     const [ufs, setUfs] = useState<string[]>([]);
-    const [cities, setCities] = useState<string[]>([]);
-    const [selectedItems, setSelectedItems] = useState<number[]>([]);
     const [selectedUf, setSelectedUf] = useState('0');
     const [selectedCity, setSelectedCity] = useState('0');
+    
+    const [selectedFile, setSelectedFile] = useState<File>();
+    const [selectedItems, setSelectedItems] = useState<number[]>([]);
     const [selectedPosition, setSelectedPosition] = useState<[number, number]>([-22.5216247, -43.1820601]);
+    const [items, setItems] = useState<Item[]>([]);
+    const [cities, setCities] = useState<string[]>([]);
 
     //const [initialPosition, setInitialPosition] = useState<[number, number]>([0, 0]);
 
@@ -121,15 +122,9 @@ const CreatePoint = () => {
     async function handleSubmit(event: FormEvent) {
         event.preventDefault();
 
-
-
         const { name, email, whatsapp } = formData;
         const [latitude, longitude] = selectedPosition;
-        const uf = selectedUf;
-        const city = selectedCity;
-        const items = selectedItems;
-
-        //const [ uf, city, items] = [selectedUf, selectedCity, selectedItems];
+        const [ uf, city, items] = [selectedUf, selectedCity, selectedItems];
 
         const data = new FormData();
 
@@ -145,16 +140,6 @@ const CreatePoint = () => {
         if (selectedFile) {
             data.append('image', selectedFile);
         }
-        // const data = {
-        //     name,
-        //     email,
-        //     whatsapp,
-        //     latitude,
-        //     longitude,
-        //     uf,
-        //     city,
-        //     items
-        // };
 
         await api.post('points', data);
 

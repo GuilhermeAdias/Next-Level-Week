@@ -52,7 +52,6 @@ class PointsController {
         return response.json({ point: serializedPoint, items });
     }
 
-
     async create(request: Request, response: Response) {
         const {
             name,
@@ -100,6 +99,18 @@ class PointsController {
             point_id,
             ...point,
         });
+    }
+
+    async drop(request: Request, response: Response) {
+        const { id } = request.params;
+
+        const point = await knex('points').where('id', id).delete();
+
+        if (!point) {
+            return response.status(400).json({ message: 'Point Not Found.' });
+        }
+
+        return response.json({ succsess: 'Point Removed !'});
     }
 }
 
