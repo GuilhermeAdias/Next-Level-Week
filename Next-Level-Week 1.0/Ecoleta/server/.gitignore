@@ -4,4 +4,6 @@ node_modules
 uploads/*
 !uploads/.gitkeep
 
-*.sqlite
+.sqlite
+
+src
