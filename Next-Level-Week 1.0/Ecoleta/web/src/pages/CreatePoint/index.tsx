@@ -26,25 +26,23 @@ interface IbgeUfResponse {
 }
 
 const CreatePoint = () => {
+    const history = useHistory();
+
     const [ufs, setUfs] = useState<string[]>([]);
     const [selectedUf, setSelectedUf] = useState('0');
     const [selectedCity, setSelectedCity] = useState('0');
-    
     const [selectedFile, setSelectedFile] = useState<File>();
     const [selectedItems, setSelectedItems] = useState<number[]>([]);
     const [selectedPosition, setSelectedPosition] = useState<[number, number]>([-22.5216247, -43.1820601]);
     const [items, setItems] = useState<Item[]>([]);
     const [cities, setCities] = useState<string[]>([]);
-
-    //const [initialPosition, setInitialPosition] = useState<[number, number]>([0, 0]);
-
     const [formData, setFormData] = useState({
         name: '',
         email: '',
         whatsapp: '',
     });
 
-    const history = useHistory();
+    //const [initialPosition, setInitialPosition] = useState<[number, number]>([0, 0]);
 
     // useEffect(() => {
     //     navigator.geolocation.getCurrentPosition(position =>{
@@ -124,7 +122,7 @@ const CreatePoint = () => {
 
         const { name, email, whatsapp } = formData;
         const [latitude, longitude] = selectedPosition;
-        const [ uf, city, items] = [selectedUf, selectedCity, selectedItems];
+        const [uf, city, items] = [selectedUf, selectedCity, selectedItems];
 
         const data = new FormData();
 
@@ -281,7 +279,6 @@ const CreatePoint = () => {
                 <button type="submit">
                     Cadastrar ponto de coleta
                 </button>
-
             </form>
         </div>
     );
