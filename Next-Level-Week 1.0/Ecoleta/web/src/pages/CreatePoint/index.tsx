@@ -6,8 +6,6 @@ import { LeafletMouseEvent } from 'leaflet';
 import api from '../../services/api';
 import axios from 'axios';
 import Dropzone from '../../components/Dropzone';
-
-
 import './CreatePoint.css';
 import logo from '../../assets/logo.svg';
 
@@ -141,11 +139,10 @@ const CreatePoint = () => {
 
         await api.post('points', data);
 
-        alert('Ponto de coleta criado!');
+        history.push('/created-point');
 
-        history.push('/');
+        //alert('Foi');
     };
-
 
     return (
         <div id="page-create-point">
@@ -156,6 +153,7 @@ const CreatePoint = () => {
                     <FiArrowDownLeft />
                     Voltar para home
                 </Link>
+
             </header>
 
             <form onSubmit={handleSubmit}>

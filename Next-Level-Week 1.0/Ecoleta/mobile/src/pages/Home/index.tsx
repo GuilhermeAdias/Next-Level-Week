@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { View, Text, Image, StyleSheet, ImageBackground, Platform, KeyboardAvoidingView } from 'react-native';
+import { View, Text, Image, StyleSheet, ImageBackground, KeyboardAvoidingView } from 'react-native';
 import axios from 'axios';
 import { Feather as Icon } from '@expo/vector-icons';
 import RNPickerSelect from 'react-native-picker-select';

@@ -1,0 +1,93 @@
+#page-modal {
+    height: 100vh;
+    background-color: black;
+}
+
+#page-modal .content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#page-modal .content main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#page-modal .content main h1 {
+    font-size: 60px;
+    color: #FFF;
+    margin: 0px 80px;
+}
+
+#page-modal .content main div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+#page-modal .content main a {
+    width: 100%;
+    max-width: 360px;
+    height: 72px;
+    background: var(--primary-color);
+    border-radius: 8px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    justify-content: center;
+    margin-top: 160px;
+}
+
+#page-modal .content main a span {
+    display: block;
+    background: rgba(0, 0, 0, 0.08);
+    width: 72px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s;
+}
+
+#page-modal .content main a span svg {
+    color: #FFF;
+    width: 24px;
+    height: 24px;
+}
+
+#page-modal .content main a strong {
+    font-size: 14px;
+    flex: 1;
+    text-align: center;
+    color: #FFF;
+}
+
+#page-modal .content main a:hover {
+    background: #2FB86E;
+}
+
+@media(max-width: 900px) {
+    #page-modal .content {
+        align-items: center;
+        text-align: center;
+    }
+    #page-modal .content header {
+        margin: 48px auto 0;
+    }
+    #page-modal .content main {
+        align-items: center;
+    }
+    #page-modal .content main h1 {
+        font-size: 42px;
+    }
+    #page-modal .content main p {
+        font-size: 24px;
+    }
+}
