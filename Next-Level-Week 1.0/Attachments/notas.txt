@@ -1,0 +1,11 @@
+// -------- Run Database ----------- //
+
+ npm rum knex:migrate
+
+// -------- Run Seeds ----------- //
+
+npm rum knex:seed
+
+// -------- Run Aplication ----------- //
+
+npm rum dev

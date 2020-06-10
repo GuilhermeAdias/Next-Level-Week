@@ -193,6 +193,7 @@ const styles = StyleSheet.create({
         fontSize: 20,
         fontFamily: 'Ubuntu_700Bold',
         marginTop: 24,
+        color: '#6934cb',
     },
 
     description: {

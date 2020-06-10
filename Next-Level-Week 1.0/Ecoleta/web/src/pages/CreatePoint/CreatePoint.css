@@ -14,7 +14,7 @@
 }
 
 #page-create-point header a {
-  color: var(--title-color);
+  color: #FFF;
   font-weight: bold;
   text-decoration: none;
 
@@ -31,7 +31,7 @@
   margin: 80px auto;
   padding: 64px;
   max-width: 730px;
-  background: #FFF;
+  background: rgba(44, 43, 43, 0.521);
   border-radius: 8px;
 
   display: flex;
@@ -63,7 +63,7 @@
 #page-create-point form legend span {
   font-size: 14px;
   font-weight: normal;
-  color: var(--text-color);
+  color: var(--primary-color);
 }
 
 #page-create-point form .field-group {
@@ -73,7 +73,6 @@
 
 #page-create-point form .field {
   flex: 1;
-
   display: flex;
   flex-direction: column;
   margin-bottom: 24px;
@@ -110,7 +109,9 @@
 
 #page-create-point form .field label {
   font-size: 14px;
+  font-weight: bold;
   margin-bottom: 8px;
+  color: var(--primary-color);
 }
 
 #page-create-point form .field :disabled {
@@ -183,6 +184,7 @@
   justify-content: space-between;
   align-items: center;
 
+  font-weight: bold;
   text-align: center;
 
   cursor: pointer;

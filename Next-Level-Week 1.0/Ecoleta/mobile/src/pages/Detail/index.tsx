@@ -110,7 +110,7 @@ const styles = StyleSheet.create({
   },
 
   pointName: {
-    color: '#322153',
+    color: '#6934cb',
     fontSize: 28,
     fontFamily: 'Ubuntu_700Bold',
     marginTop: 24,

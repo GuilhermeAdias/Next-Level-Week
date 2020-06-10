@@ -181,7 +181,7 @@ const styles = StyleSheet.create({
     },
 
     title: {
-        color: '#322153',
+        color: '#6934cb',
         fontSize: 32,
         fontFamily: 'Ubuntu_700Bold',
         maxWidth: 260,

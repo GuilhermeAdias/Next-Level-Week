@@ -13,7 +13,7 @@ const Modal = () => {
                     <div>
                         <FiCheckCircle name="chek" size={80} color="#2FB86E" />
                     </div>
-                    <h1>Cadastro Concluido!.</h1>
+                    <h1>Cadastro Concluido !</h1>
 
                     <div>
                         <Link to="/">
