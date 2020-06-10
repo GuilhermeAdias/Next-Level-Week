@@ -21,4 +21,3 @@ Na versão mobile do Ecoleta, o usuário tem a posibilidade de procurar os ponto
 também é possivel ter informações detalhadas sobre o ponto de coleta selecionado:
 
 ![Mobile-Ecoleta2](https://user-images.githubusercontent.com/55250762/84314352-47d9ce80-ab3e-11ea-9c6b-f39f596193e3.png)
-
