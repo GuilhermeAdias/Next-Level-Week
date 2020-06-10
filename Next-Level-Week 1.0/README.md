@@ -121,9 +121,9 @@ também é possivel ter informações detalhadas sobre o ponto de coleta selecio
 ## Redes Socias 📱
 
 Follow on :
-:blue_square: Linkedin [Guilherme A Dias](https://www.linkedin.com/in/guilherme-abranches-dias-148215121)
-📷 [guiabranchesd6](https://www.instagram.com/guiabranchesd6/)
-📷 Follow Rocketseat on Instagram [rocketseat_oficial](https://www.instagram.com/rocketseat_oficial/) :rocket: 
+- :blue_square: Linkedin: [Guilherme A Dias](https://www.linkedin.com/in/guilherme-abranches-dias-148215121)
+- 📷 Instagram [guiabranchesd6](https://www.instagram.com/guiabranchesd6/)
+- 📷 Follow Rocketseat on Instagram [rocketseat_oficial](https://www.instagram.com/rocketseat_oficial/) :rocket: 
 
 [nodejs]: https://nodejs.org/
 [typescript]: https://www.typescriptlang.org/
