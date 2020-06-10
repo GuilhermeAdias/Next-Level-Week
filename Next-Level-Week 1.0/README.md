@@ -1,8 +1,7 @@
-# Next-Level-Week 1.0 ~Ecoleta~
+# Next-Level-Week
 
-## Ecoleta 1.0
+**Esse repositório está focado para o versionamento de :earth_americas: projetos da Next-Level-Week💚💜 da by 🚀Rocketseat🚀**
 
-**Projeto desenvolvido durante a Next-Level-Week💚💜 by Rocketseat**
-![Capa](https://user-images.githubusercontent.com/55250762/84310063-6be5e180-ab37-11ea-8946-c79bc408e0fd.png)
+![720x480](https://user-images.githubusercontent.com/55250762/84303466-65eb0300-ab2d-11ea-8d58-5d4a6b7da5d1.jpg)
 
 
