@@ -124,3 +124,10 @@ Follow on :
 - Linkedin [Guilherme A Dias](https://www.linkedin.com/in/guilherme-abranches-dias-148215121)
 - Instagram [guiabranchesd6](https://www.instagram.com/guiabranchesd6/)
 - Follow Rocketseat on Instagram [rocketseat_oficial](https://www.instagram.com/rocketseat_oficial/)
+
+[nodejs]: https://nodejs.org/
+[typescript]: https://www.typescriptlang.org/
+[expo]: https://expo.io/
+[reactjs]: https://reactjs.org
+[rn]: https://facebook.github.io/react-native/
+[yarn]: https://yarnpkg.com/
