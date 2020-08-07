@@ -1,0 +1,10 @@
+#page-teacher-form {
+    width: 1000vw;
+    height: 100vh;
+}
+
+@media (min-width: 700px) {
+    #page-teacher-form {
+      max-width: 100%;
+    }
+}
