@@ -1,4 +1,4 @@
-# Next-Level-Week 2.0 / :recycle:???????:earth_americas:
+# Next-Level-Week 2.0 / :recycle:PROFFY:earth_americas:
 
 <!-- ## Ecoleta 1.0
 
