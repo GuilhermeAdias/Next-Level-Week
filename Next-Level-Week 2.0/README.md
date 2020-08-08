@@ -1,6 +1,6 @@
 # Next-Level-Week 2.0 / PROFFY
 
-<!-- ## Ecoleta 1.0
+## Proffy 1.0
 
 **Ecoleta é um projeto desenvolvido com base na semana internacional do meio ambiente, durante a Next-Level-Week 1.0 💚💜 by Rocketseat 💚💜**
 
@@ -130,10 +130,7 @@ Follow on :
 [expo]: https://expo.io/
 [reactjs]: https://reactjs.org
 [rn]: https://facebook.github.io/react-native/
-[yarn]: https://yarnpkg.com/ -->
-
-<!-- 
-------------------<>Ouuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu esse aqui</>----------------
+[yarn]: https://yarnpkg.com/
 
 
 <div align='center'>
@@ -293,4 +290,4 @@ O Proffy é uma plataforma de estudos on-line, com intuito de conectar alunos e 
 ###  📸 Print da lista de professores
 <img src="./.github/print2.png" width='500'>
 
-</div> -->
+</div>
