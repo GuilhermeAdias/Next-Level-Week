@@ -3,39 +3,56 @@ import React from "react";
 import whastappIcon from "../../assets/images/icons/whatsapp.svg";
 
 import "./styles.css";
+import api from "../../services/api";
 
-const TeacherItem = () => {
+export interface Teacher {
+  id: number;
+  avatar: string;
+  bio: string;
+  cost: number;
+  name: string;
+  subject: string;
+  whatsapp: string;
+}
+
+interface TeacherItemProps {
+  teacher: Teacher;
+}
+
+const TeacherItem: React.FC<TeacherItemProps> = ({ teacher }) => {
+
+  function createNewConnection() {
+    api.post('connections', {
+      user_id: teacher.id,
+    })
+  }
+
   return (
     <article className="teacher-item">
       <header>
         <img
-          src="https://avatars2.githubusercontent.com/u/55250762?s=460&u=466bf40737221df81874a45c7294dca7eaf51b71&v=4"
-          alt="Matheus Oliveira"
-        />
+          src={teacher.avatar} alt={teacher.name} />
         <div>
-          <strong>Guilherme Abranches Dias</strong>
-          <span>Programação</span>
+          <strong>{teacher.name}</strong>
+          <span>{teacher.subject}</span>
         </div>
       </header>
 
-      <p>
-        Entusiasta das melhores tecnologias de química avançada.
-        <br />
-        <br />
-        Apaixonado por explodir coisas em laboratório e por mudar a vida das
-        pessoas através de experiências. Mais de 200.000 pessoas já passaram por
-        uma das minhas explosões.
-      </p>
+      <p>{teacher.bio}</p>
 
       <footer>
         <p>
           Preço/Hora
-          <strong>R$ 100,00</strong>
+          <strong>R$ {teacher.cost}</strong>
         </p>
-        <button type="button">
-          <img src={whastappIcon} alt="" />
+        <a
+          target="_blank"
+          onClick={createNewConnection}
+          href={` https://wa.me/${teacher.whatsapp}`}
+        >
+          <img src={whastappIcon} alt="Whatsapp" />
           Entrar em contato
-        </button>
+        </a>
       </footer>
     </article>
   );
